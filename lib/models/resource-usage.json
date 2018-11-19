@@ -1,0 +1,43 @@
+{
+  "name": "resource_usage",
+  "plural": "resource_usages",
+  "base": "Model",
+  "properties": {},
+  "methods": {
+    "getResourceUsage": {
+      "isStatic": true,
+      "accepts": [
+        {
+          "arg": "pod_name",
+          "type": "string",
+          "http": {
+            "source": "query"
+          }
+        },
+        {
+          "arg": "start_time",
+          "type": "DateString",
+          "http": {
+            "source": "query"
+          },
+          "required": false
+        },
+        {
+          "arg": "end_time",
+          "type": "DateString",
+          "http": {
+            "source": "query"
+          },
+          "required": false
+        }
+      ],
+      "returns": {
+        "arg": "result",
+        "type": "json"
+      },
+      "http": {
+        "verb": "get"
+      }
+    }
+  }
+}
