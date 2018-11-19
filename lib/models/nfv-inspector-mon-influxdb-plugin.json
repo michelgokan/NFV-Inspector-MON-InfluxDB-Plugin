@@ -1,0 +1,27 @@
+{
+  "name": "nfv-inspector-mon-influxdb-plugin",
+  "plural": "nfv-inspector-mon-influxdb-plugin",
+  "base": "Model",
+  "properties": {},
+  "methods": {
+    "getResourceUsage": {
+      "isStatic": true,
+      "accepts": [
+        {
+          "arg": "query",
+          "type": "string",
+          "http": {
+            "source": "query"
+          }
+        }
+      ],
+      "returns": {
+        "arg": "result",
+        "type": "json"
+      },
+      "http": {
+        "verb": "get"
+      }
+    }
+  }
+}
