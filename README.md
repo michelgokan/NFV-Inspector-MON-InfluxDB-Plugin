@@ -1,0 +1,1 @@
+# NFV-Inspector-MON-InfluxDB-Plugin
