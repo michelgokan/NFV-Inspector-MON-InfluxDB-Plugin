@@ -1,0 +1,22 @@
+{
+  "name": "nfv-inspector-mon-influxdb-plugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michelgokan/NFV-Inspector-MON-InfluxDB-Plugin.git"
+  },
+  "author": "Michel Gokan Khan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/michelgokan/NFV-Inspector-MON-InfluxDB-Plugin/issues"
+  },
+  "homepage": "https://github.com/michelgokan/NFV-Inspector-MON-InfluxDB-Plugin#readme"
+}
