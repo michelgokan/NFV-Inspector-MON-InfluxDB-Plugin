@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#TODO: Automatically add this componen in component-config.json
 PLUGIN_NAME="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd | xargs basename | awk '{print tolower($0)}')"
 
 source ../utils/functions.sh

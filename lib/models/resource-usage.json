@@ -15,6 +15,13 @@
           }
         },
         {
+          "arg": "resource_name",
+          "type": "string",
+          "http": {
+            "source": "query"
+          }
+        },
+        {
           "arg": "start_time",
           "type": "DateString",
           "http": {

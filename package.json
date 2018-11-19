@@ -18,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/michelgokan/NFV-Inspector-MON-InfluxDB-Plugin/issues"
   },
-  "homepage": "https://github.com/michelgokan/NFV-Inspector-MON-InfluxDB-Plugin#readme"
+  "homepage": "https://github.com/michelgokan/NFV-Inspector-MON-InfluxDB-Plugin#readme",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "influx": "^5.0.7"
+  }
 }
