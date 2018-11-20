@@ -15,7 +15,7 @@
           }
         },
         {
-          "arg": "resource_name",
+          "arg": "resource_type",
           "type": "string",
           "http": {
             "source": "query"
