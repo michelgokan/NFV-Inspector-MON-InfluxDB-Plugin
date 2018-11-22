@@ -15,6 +15,14 @@
           }
         },
         {
+          "arg": "get_live",
+          "type": "boolean",
+          "http": {
+            "source": "query"
+          },
+          "required": true
+        },
+        {
           "arg": "start_time",
           "type": "DateString",
           "http": {
