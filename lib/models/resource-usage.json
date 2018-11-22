@@ -4,7 +4,7 @@
   "base": "Model",
   "properties": {},
   "methods": {
-    "getResourceUsage": {
+    "getAllResourceUsages": {
       "isStatic": true,
       "accepts": [
         {
@@ -15,7 +15,140 @@
           }
         },
         {
-          "arg": "resource_type",
+          "arg": "start_time",
+          "type": "DateString",
+          "http": {
+            "source": "query"
+          },
+          "required": false
+        },
+        {
+          "arg": "end_time",
+          "type": "DateString",
+          "http": {
+            "source": "query"
+          },
+          "required": false
+        }
+      ],
+      "returns": {
+        "arg": "result",
+        "type": "json"
+      },
+      "http": {
+        "verb": "get"
+      }
+    },
+    "getCPUUsages": {
+      "isStatic": true,
+      "accepts": [
+        {
+          "arg": "pod_name",
+          "type": "string",
+          "http": {
+            "source": "query"
+          }
+        },
+        {
+          "arg": "start_time",
+          "type": "DateString",
+          "http": {
+            "source": "query"
+          },
+          "required": false
+        },
+        {
+          "arg": "end_time",
+          "type": "DateString",
+          "http": {
+            "source": "query"
+          },
+          "required": false
+        }
+      ],
+      "returns": {
+        "arg": "result",
+        "type": "json"
+      },
+      "http": {
+        "verb": "get"
+      }
+    },
+    "getMemoryUsages": {
+      "isStatic": true,
+      "accepts": [
+        {
+          "arg": "pod_name",
+          "type": "string",
+          "http": {
+            "source": "query"
+          }
+        },
+        {
+          "arg": "start_time",
+          "type": "DateString",
+          "http": {
+            "source": "query"
+          },
+          "required": false
+        },
+        {
+          "arg": "end_time",
+          "type": "DateString",
+          "http": {
+            "source": "query"
+          },
+          "required": false
+        }
+      ],
+      "returns": {
+        "arg": "result",
+        "type": "json"
+      },
+      "http": {
+        "verb": "get"
+      }
+    },
+    "getDiskUsages": {
+      "isStatic": true,
+      "accepts": [
+        {
+          "arg": "pod_name",
+          "type": "string",
+          "http": {
+            "source": "query"
+          }
+        },
+        {
+          "arg": "start_time",
+          "type": "DateString",
+          "http": {
+            "source": "query"
+          },
+          "required": false
+        },
+        {
+          "arg": "end_time",
+          "type": "DateString",
+          "http": {
+            "source": "query"
+          },
+          "required": false
+        }
+      ],
+      "returns": {
+        "arg": "result",
+        "type": "json"
+      },
+      "http": {
+        "verb": "get"
+      }
+    },
+    "getNetworkUsages": {
+      "isStatic": true,
+      "accepts": [
+        {
+          "arg": "pod_name",
           "type": "string",
           "http": {
             "source": "query"
